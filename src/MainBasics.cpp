@@ -16,6 +16,7 @@ Points to Follow for the whole C course :
 
 //Do not Edit below Header Files
 #include <stdio.h>
+#include <conio.h>
 #include "FunctionHeadersBasics.h"
 
 int main(){
@@ -52,6 +53,6 @@ int main(){
 	int total = variableArguments(3, 20, 90, 98);
 	printf("There are %d students greater than 90\n", total);
 	
-	
+	getche();
 	return 0;
 }

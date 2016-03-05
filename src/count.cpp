@@ -11,6 +11,24 @@ ERROR CASES: Return -1 in error cases.
 
 NOTES:
 */
-int count(int num1, int num2) {
-	return 0;
+int count(int num1, int num2)
+{
+	int c = 1;
+	if ((0 < num1) && (0 <= num2 ))
+	{
+		if (num1 > num2)
+			return 1;
+		if (num1 == num2)
+			return 2;
+		if (num1 < num2)
+		{
+			while (((c + 1)*num1) <= num2)
+			{
+				c++;
+			}
+			return c;
+		}
+	}
+	else
+		return -1;
 }

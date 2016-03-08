@@ -29,7 +29,7 @@ int main(){
 	
 	//Test Count file
 	
-	int countTemp = count(5, 20);
+	int countTemp = count(123,0);
 	printf("%d\n", countTemp);
 
 
@@ -50,7 +50,7 @@ int main(){
 	}
 
 	//Variable Arguments
-	int total = variableArguments(3, 20, 90, 98);
+	int total = variableArguments(2, 92, 98);
 	printf("There are %d students greater than 90\n", total);
 	
 	getche();

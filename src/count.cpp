@@ -13,11 +13,11 @@ NOTES:
 */
 int count(int num1, int num2)
 {
-	int c = 1;
-	if ((0 < num1) && (0 <= num2 ))
+	int c ;
+	if ((0 < num1) && (0 <=num2 ))
 	{
-		if (num1 > num2)
-			return 1;
+		/*if (num1 > num2)
+			return -1;
 		if (num1 == num2)
 			return 2;
 		if (num1 < num2)
@@ -27,7 +27,16 @@ int count(int num1, int num2)
 				c++;
 			}
 			return c;
-		}
+		}*/
+		c = num2 / num1;
+		if (c == 0)
+			return 0;
+		if (c == 1)
+			return 2;
+		if (c < 1)
+			return -1;
+		if (c > 1)
+			return c;
 	}
 	else
 		return -1;
